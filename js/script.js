@@ -255,11 +255,11 @@ $(document).ready(function () {
         var prtAttr = $(this).data('filter');
 
         if (prtAttr == 'all') {
-            $('.prt-item').show('500');
+            $('.prt-item').show();
         }
         else{
-            $('.prt-item').not('.' + prtAttr).hide('500');
-            $('.prt-item').filter('.' + prtAttr).show('500');
+            $('.prt-item').not('.' + prtAttr).hide();
+            $('.prt-item').filter('.' + prtAttr).show();
         }
 
     });
