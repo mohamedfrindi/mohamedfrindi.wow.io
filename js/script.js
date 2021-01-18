@@ -1,12 +1,9 @@
 
 // loding page --------------------------
 $(document).ready(function () {
-    $('.loding').hide();
-/*
     $(window).on('load',function () {
         $('.loding').show();
-    })
-*/
+    });
 });
 /*------------X-------------X-----------*/
 
