@@ -4,6 +4,9 @@ $(document).ready(function () {
     $(window).on('load',function () {
         $('.loding').show();
     });
+	setTimeout(function () {
+		$('.loding').slideUp();
+	},10000);
 });
 /*------------X-------------X-----------*/
 
