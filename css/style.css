@@ -726,6 +726,10 @@ ul{
 .prt-nav{
     margin-bottom: 20px;
 }
+.container-fluid.prt .row{
+    margin-left: 0;
+    margin-right: 0;
+}
 .prt-nav button{
     background-color: transparent;
     border: 1px solid var(--all-color);
