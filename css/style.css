@@ -755,6 +755,10 @@ ul{
 .prt-content{
     width: 100%;
 }
+.prt-content .row {
+    margin-left: 0;
+    margin-right: 0;
+}
 .prt-item{
     height: 235px;
     margin-bottom: 10px;
