@@ -1,10 +1,10 @@
 
-// loding page --------------------------
+/*------- loding page --------*/
 $(document).ready(function () {
     $(window).on('load',function () {
         $('.loding').show();
-    });
-	setTimeout(function () {
+    })
+    setTimeout(function () {
 		$('.loding').slideUp();
 	},10000);
 });
@@ -72,7 +72,7 @@ $(document).ready(function () {
     $('.skin-btn').on('click',function () {
 
         $(this).animate({
-            left : '-100'
+            left : '-100%'
         },1000);
 
         $('.skin-content').animate({
@@ -175,7 +175,7 @@ $(document).ready(function () {
 
     // transition -----------------------------
             // part 1 : efect -------
-            $('.bars-content-list ul li , .btn-about a').on('click',function (e) {
+            $('.bars-content-list ul li , .btn-about').on('click',function (e) {
 
                 $('.trs-cont').show();
 
@@ -295,12 +295,17 @@ $(document).ready(function () {
     // part 1 : item prev
     $('.img-previe i').on('click',function () {
         $('.img-previe').hide('500');
+        $('.content').css({
+            filter : 'none'
+        });
     });
 
     // part 2 : add img for item 
     $('.portfolio img').each(function () {
         $(this).on('click',function () {
-
+            $('.content').css({
+                filter: 'brightness(0.1)'
+            });
             $('.img-previe').show('500');
             $('.img-previe img').attr( 'src' , $(this).attr('src') );
 
