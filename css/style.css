@@ -1,4 +1,4 @@
-/*------------- font -------------------*/
+/*------------- fonts -------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
 /*
     font-family: 'Roboto', sans-serif;
@@ -31,7 +31,7 @@ body{
     --main-color : #1e272e;
     --main-color-2 : #111111;
     --main-color-3 : #040506;
-    --all-color : #c70039;
+    --all-color : #FFB400;
     /*------X-------X--------------*/
 
     /*--------------*/
@@ -71,6 +71,9 @@ ul{
     padding: 0 20px;
     border-radius: 20px;
     transition: .3s ease;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
 }
 .btn:hover{
     color: white;
@@ -102,7 +105,9 @@ ul{
     transform: rotate(20deg);
     display: none;
 }
-
+body .magic-hover {
+    transition: all .5s ease;
+}
 
 /*-------------- loding -----------------*/
 .loding{
@@ -724,11 +729,12 @@ ul{
     background-color: var(--main-color-3);
 }
 .prt-nav{
+    margin: auto;
     margin-bottom: 20px;
 }
-.container-fluid.prt .row {
-    margin-right: 0;
+.container-fluid.prt .row{
     margin-left: 0;
+    margin-right: 0;
 }
 .prt-nav button{
     background-color: transparent;
@@ -754,10 +760,6 @@ ul{
 
 .prt-content{
     width: 100%;
-}
-.prt-content .row {
-    margin-left: 0;
-    margin-right: 0;
 }
 .prt-item{
     height: 235px;
