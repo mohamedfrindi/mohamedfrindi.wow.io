@@ -2,11 +2,13 @@
 /*------- loding page --------*/
 $(document).ready(function () {
     $(window).on('load',function () {
-        $('.loding').show();
+        $('.loding').slideUp();
     })
-    setTimeout(function () {
+	/*
+    	setTimeout(function () {
 		$('.loding').slideUp();
 	},10000);
+	*/
 });
 /*------------X-------------X-----------*/
 
